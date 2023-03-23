@@ -1,10 +1,16 @@
 import "../styles/App.css";
 import React from "react";
+import LocationDetails from "./locationDetails";
 
-function App() {
+function App(props) {
   return (
-    <div className="prop">
-      <h1>Weather App</h1>
+    <div className="App">
+      <LocationDetails
+        // eslint-disable-next-line react/destructuring-assignment, react/prop-types
+        city={props.location.city}
+        // eslint-disable-next-line react/destructuring-assignment, react/prop-types
+        country={props.location.country}
+      />
     </div>
   );
 }
