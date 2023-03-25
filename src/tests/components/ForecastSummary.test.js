@@ -7,7 +7,7 @@ describe("ForecastSummary", () => {
     date: 11111111,
     description: "Stub description",
     icon: "stubIcon",
-    temp: {
+    temperature: {
       min: 12,
       max: 22,
     },
@@ -19,7 +19,7 @@ describe("ForecastSummary", () => {
         date={validProps.date}
         description={validProps.description}
         icon={validProps.icon}
-        temp={validProps.temp}
+        temperature={validProps.temperature}
       />
     );
 
@@ -32,7 +32,7 @@ describe("ForecastSummary", () => {
         date={validProps.date}
         description={validProps.description}
         icon={validProps.icon}
-        temp={validProps.temp}
+        temperature={validProps.temperature}
       />
     );
 
@@ -41,6 +41,6 @@ describe("ForecastSummary", () => {
       "forecast-summary__description"
     );
     expect(getByText("stubIcon")).toHaveClass("forecast-summary__icon");
-    expect(getByText("22°C")).toHaveClass("forecast-summary__temp");
+    expect(getByText("22°C")).toHaveClass("forecast-summary__temperature");
   });
 });
