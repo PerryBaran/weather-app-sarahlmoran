@@ -23,6 +23,7 @@
   },
   "plugins": ["react"],
   "rules": {
+    "react/prop-types": [0],
     "quotes": [0],
     "react/jsx-props-no-spreading": [0],
     "react/jsx-filename-extension": [
