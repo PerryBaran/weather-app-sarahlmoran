@@ -7,11 +7,11 @@ function ForecastDetails(props) {
     <div className="forecast-details" data-testid="forecast-details">
       <div className="forecast-details__date">Date: {formattedDate}</div>
       <div className="forecast-details__humidity">Humidity: {humidity}</div>
-      <div className="forecast-summary__mintemperature">
+      <div className="forecast-details__mintemperature">
         Min: {temperature.min}
         &deg;C
       </div>
-      <div className="forecast-summary__maxtemperature">
+      <div className="forecast-details__maxtemperature">
         Max: {temperature.max}
         &deg;C
       </div>
