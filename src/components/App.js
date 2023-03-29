@@ -1,9 +1,9 @@
 import "../styles/App.css";
 import React, { useState, useEffect } from "react";
-import axios from "axios";
 import LocationDetails from "./LocationDetails";
 import ForecastSummaries from "./ForecastSummaries";
 import ForecastDetails from "./ForecastDetails";
+import getForecast from "../requests/getForecast";
 
 function App() {
   const [forecasts, setForecasts] = useState([]);
@@ -18,18 +18,8 @@ function App() {
     setSelectedDate(date);
   };
 
-  const getForecast = () => {
-    const endpoint = "https://cmd-shift-weather-app.onrender.com/forecast";
-
-    axios.get(endpoint).then((response) => {
-      setSelectedDate(response.data.forecasts[0].date);
-      setForecasts(response.data.forecasts);
-      setLocation(response.data.location);
-    });
-  };
-
   useEffect(() => {
-    getForecast();
+    getForecast(setSelectedDate, setForecasts, setLocation);
   }, []);
 
   return (
