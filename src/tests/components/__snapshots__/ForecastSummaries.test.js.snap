@@ -25,6 +25,7 @@ exports[`ForecastSummaries renders correctly 1`] = `
       >
         <img
           alt="weather icon"
+          src="https://openweathermap.org/img/wn/01d@2x.png"
         />
       </div>
       <div
@@ -50,7 +51,7 @@ exports[`ForecastSummaries renders correctly 1`] = `
       <div
         class="forecast-summary__description"
       >
-        Stub description 2
+        602
       </div>
       <div
         class="forecast-summary__icon"
