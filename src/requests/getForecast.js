@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const getForecast = (
+const getForecast = async (
   searchText,
   setSelectedDate,
   setForecasts,
@@ -12,11 +12,10 @@ const getForecast = (
     endpoint += `?city=${searchText}`;
   }
 
-  return axios.get(endpoint).then((response) => {
-    setSelectedDate(response.data.forecasts[0].date);
-    setForecasts(response.data.forecasts);
-    setLocation(response.data.location);
-  });
+  const response = await axios.get(endpoint);
+  setSelectedDate(response.data.forecasts[0].date);
+  setForecasts(response.data.forecasts);
+  setLocation(response.data.location);
 };
 
 export default getForecast;
