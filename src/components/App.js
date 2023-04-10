@@ -24,6 +24,7 @@ function App() {
   useEffect(() => {
     getForecast("", setSelectedDate, setForecasts, setLocation);
   }, []);
+  // Code review question: I used an empty string instead of searchText as this required me to add an ESLint disable- which is correct?
 
   const handleCitySearch = () => {
     getForecast(

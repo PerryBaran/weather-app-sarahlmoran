@@ -72,6 +72,9 @@ npm start
   }
 ```
 
-## Project Status
+## If I had more time
 
-Complete... for now! With more time I would add further styling to the app.
+With more time I would:
+
+- Add further CSS styling to the app.
+- Improve the UI so the user does not need to refresh the browser after entering an invalid search.
