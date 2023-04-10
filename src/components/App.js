@@ -1,6 +1,6 @@
 import "../styles/App.css";
 import React, { useState, useEffect } from "react";
-import LocationDetails from "./LocationDetails";
+import LocationDetails from "./Details";
 import ForecastSummaries from "./ForecastSummaries";
 import ForecastDetails from "./ForecastDetails";
 import getForecast from "../requests/getForecast";

@@ -10,5 +10,3 @@ function LocationDetails(props) {
 }
 
 export default LocationDetails;
-
-// to update file name
