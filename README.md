@@ -78,3 +78,7 @@ With more time I would:
 
 - Add further CSS styling to the app.
 - Improve the UI so the user does not need to refresh the browser after entering an invalid search.
+
+## Check it out
+
+Check out this weather application on https://weather-app-uk-command-shift.netlify.app
