@@ -11,3 +11,5 @@ describe("LocationDetails", () => {
     expect(getByText("Manchester,UK")).toBeInstanceOf(HTMLHeadingElement);
   });
 });
+
+// to update file name
